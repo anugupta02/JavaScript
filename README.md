@@ -1296,15 +1296,15 @@ Other Style Guides
 
     ```javascript
     // bad
-    const AirbnbStyleGuide = require('./AirbnbStyleGuide');
-    module.exports = AirbnbStyleGuide.es6;
+    const StyleGuide = require('./StyleGuide');
+    module.exports = StyleGuide.es6;
 
     // ok
-    import AirbnbStyleGuide from './AirbnbStyleGuide';
-    export default AirbnbStyleGuide.es6;
+    import StyleGuide from './StyleGuide';
+    export default StyleGuide.es6;
 
     // best
-    import { es6 } from './AirbnbStyleGuide';
+    import { es6 } from './StyleGuide';
     export default es6;
     ```
 
@@ -1315,10 +1315,10 @@ Other Style Guides
 
     ```javascript
     // bad
-    import * as AirbnbStyleGuide from './AirbnbStyleGuide';
+    import * as StyleGuide from './StyleGuide';
 
     // good
-    import AirbnbStyleGuide from './AirbnbStyleGuide';
+    import StyleGuide from './StyleGuide';
     ```
 
   <a name="modules--no-export-from-import"></a><a name="10.3"></a>
@@ -1329,11 +1329,11 @@ Other Style Guides
     ```javascript
     // bad
     // filename es6.js
-    export { es6 as default } from './AirbnbStyleGuide';
+    export { es6 as default } from './StyleGuide';
 
     // good
     // filename es6.js
-    import { es6 } from './AirbnbStyleGuide';
+    import { es6 } from './StyleGuide';
     export default es6;
     ```
 
@@ -2553,14 +2553,14 @@ Other Style Guides
 
     ```javascript
     // bad
-    import { es6 } from './AirbnbStyleGuide';
+    import { es6 } from './StyleGuide';
       // ...
     export default es6;
     ```
 
     ```javascript
     // bad
-    import { es6 } from './AirbnbStyleGuide';
+    import { es6 } from './StyleGuide';
       // ...
     export default es6;↵
     ↵
@@ -2568,7 +2568,7 @@ Other Style Guides
 
     ```javascript
     // good
-    import { es6 } from './AirbnbStyleGuide';
+    import { es6 } from './StyleGuide';
       // ...
     export default es6;↵
     ```
