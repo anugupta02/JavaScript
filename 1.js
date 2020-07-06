@@ -169,5 +169,82 @@ console.log(numbers)
 
 
 //Functions in JS :
+let sayHello = function(name){
+    console.log("Greeting message for user")
+    console.log(`Hey ${name}`)
+}
 
+// sayHello('Alon Musk')
+// sayHello(name)
+
+let fullNameMaker = function(firstname, lastname){
+    console.log("Welcome to the world")
+    console.log(`Happy Birthday to you, ${firstname} ${lastname}`)
+}
+
+//fullNameMaker('Anu' , 'Gupta')
+
+let myAdder = function (num1, num2) {
+   let added = num1 + num2
+   return added
+}
+
+let result = myAdder(3,5)
+//console.log(result)
+
+// Default parameters in JS :
+let myMultiplier = function (num1 , num2) {
+    return num1 * num2
+}
+
+//console.log(myMultiplier(3,8))
+
+let guestUser = function (name='Anu', courseCount=0) {
+    return 'Hello ' + name + ' and your course count is ' + courseCount
+}
+
+console.log(guestUser('John Doe'));
+console.log(guestUser('Alon Musk',1));
+
+
+//For Each Loop in JS :
+
+const days = ['Mon','Tue','Wed','Thu','Fri','Sat']
+const months = [ "Jan", "Feb", "Mar", "Apr", "May", "Jun",
+    "Jul", "Aug", "Sep", "Oct", "Nov", "Dec" ];
+//console.log(days[0])
+// let sayHello1 = function(name){
+//     console.log(`Today is : ${name}`)
+// }
+// days.forEach(sayHello1)
+
+days.forEach(
+    function(anu){
+      //  console.log(`Today is : ${anu}`)
+    })
+
+days.forEach(
+    function(day,index){
+      //  console.log(`Starts with ${day} -- ${index+1}`)
+    })
+
+months.forEach(
+    function(month,index){
+       // console.log(`Current Month is ${month} -- ${index+1}`)
+    })
+
+const toDoList = ['Wake Up','Walk Up','Gym','Eat','Coding','Sleep','Repeat']
+toDoList.forEach(
+    function(todo,index){
+      console.log(`My ToDo List is here... ${todo} -- ${index+1}`)
+    })
+
+// For Loop in JS :
+
+for (let index=days.length-1; index >=0 ; index--){
+   console.log("Days are",days[index])
+}
+
+
+//My first ToDo Application:
 
