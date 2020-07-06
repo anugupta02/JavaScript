@@ -11,10 +11,10 @@ let totalScore = scr + bon
 //console.log(totalScore)
 
 let firstName = 'Anu'
- firstName = 'Akash'
+firstName = 'Akash'
 let lastName = 'Gupta'
 
- let fullName = firstName + '$$' + lastName
+let fullName = firstName + '$$' + lastName
 //console.log(fullName)
 //console.log(firstName + '-' + lastName)
 
@@ -66,8 +66,8 @@ let myGrade = (actualGrade <= 10)
 var whoIsHere = 'user'
 //whoIsHere = 'anu'
 if(whoIsHere === 'user'){
-   // console.log('Greeting message for user')
-   // console.log('Allow access to view all courses')
+    // console.log('Greeting message for user')
+    // console.log('Allow access to view all courses')
 }else if(whoIsHere === 'teacher'){
     console.log('Greeting message for teacher')
     console.log('Allow access to his courses')
@@ -99,13 +99,14 @@ if(!isVerified && isLoggedIn && hasPaymentToken){
 let iAmGlobal = 'someValue'
 
 if(true){
-    let iamLocal = 'someMoreValue'
+    var iamLocal = 'someMoreValue'
+    iAmGlobal = 'captainMarvel'
     console.log(iAmGlobal);
     console.log(iamLocal);
-}else {
-
 }
 
+console.log(iamLocal);
+console.log(iAmGlobal);
 
 
 
