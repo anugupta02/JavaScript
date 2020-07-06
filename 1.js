@@ -102,19 +102,72 @@ let iAmGlobal = 'someValue'
 if(true){
     var iamLocal = 'someMoreValue'
     iAmGlobal = 'captainMarvel'
-    console.log(iAmGlobal);
-    console.log(iamLocal);
+    // console.log(iAmGlobal);
+   // console.log(iamLocal);
 }
 
-console.log(iamLocal);
-console.log(iAmGlobal);
+//console.log(iamLocal);
+//console.log(iAmGlobal);
+
+
 
 //Kings Territory Problem in JS
 
+ let king = 'John'
+
+if(true){
+     let king = 'Jane'
+
+    if(true){
+       let king = 'Ram'
+        console.log(king);
+    }
+}
+
+if(true) {
+    //console.log("Iam second part i.e; Global king : " + king);
+}
+
+//Arrays and Templates Literals in JS :
+
+const superHeroes = ['Iron Man', 'Captain America','Spider Man','Thor']
+
+//console.log(superHeroes)
+//console.log(superHeroes[0])
+//console.log(superHeroes[superHeroes.length - 1])
+
+// Note : Tildes sybmol - ` `
+console.log(`We have ${superHeroes[superHeroes.length - 1]} as a stronger super hero`);
+//console.log(`We have total ${superHeroes.length} super heroes`);
+//console.log(`We have ${superHeroes} as a super heroes`);
 
 
+// 3 Must known methods 4 []s in JS :
+
+const numbers = ['One', 'Two', 'Three', 'Four', 'Five', 'Six']
+
+//numbers[1] = 'Something'
+//console.log(numbers)
+
+//start
+// console.log(numbers.shift())
+// console.log(numbers)
+
+// numbers.unshift('Something')
+// console.log(numbers)
+
+//end
+// console.log("The element to be deleted is: "+numbers.pop())
+// console.log(numbers)
+//numbers.push('Seven')
+//console.log(numbers.push())
+//console.log(numbers)
+
+//Middle
+numbers.splice(2, 2, 'Something')
+console.log(numbers)
 
 
-
+//Functions in JS :
 
 
