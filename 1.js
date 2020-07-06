@@ -94,7 +94,8 @@ if(!isVerified && isLoggedIn && hasPaymentToken){
     console.log('MESSAGE : please contact admin')
 }
 
-//Scope :
+
+//Scope in JS:
 
 let iAmGlobal = 'someValue'
 
@@ -107,6 +108,9 @@ if(true){
 
 console.log(iamLocal);
 console.log(iAmGlobal);
+
+//Kings Territory Problem in JS
+
 
 
 
