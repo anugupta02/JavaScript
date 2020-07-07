@@ -10,4 +10,11 @@ let floatRes = result.toFixed(2)
 console.log(Math.floor(floatRes))
 console.log(Math.ceil(floatRes))
 
-console.log(Math.random() * 100)
+
+// Here Dice program starts using random() function in JS : 
+
+let upper = 6
+let lower = 1
+
+let myRandom = Math.floor(Math.random() * (upper - lower + 1)) + lower
+console.log(myRandom)
