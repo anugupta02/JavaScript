@@ -1,6 +1,6 @@
 // Trello Version 3 in JS :
 
-let myTodosMeets = {
+let myTodosMeet = {
     day: 'Monday',
     meetings: 0,
     meetDone: 0,
@@ -21,7 +21,7 @@ let myTodosMeets = {
 }
 
 
-let myTodosMeets1 = {
+let myTodosMeet1 = {
     day: 'Tuesday',
     meetings: 12,
     meetDone: 3,
@@ -31,13 +31,13 @@ let myTodosMeets1 = {
 
 }
 
-myTodosMeets.addMeeting(4)
+myTodosMeet.addMeeting(4)
 
 //1. Handle meeting done
-myTodosMeets.addMeetingDone(5)
+myTodosMeet.addMeetingDone(5)
 
-console.log(myTodosMeets.summary())
+console.log(myTodosMeet.summary())
 
 //2. Create a fn that can reset entire day
-console.log(myTodosMeets.resetDay())
-//myTodosMeets1.addMeeting()
+console.log(myTodosMeet.resetDay())
+//myTodosMeet1.addMeeting()
