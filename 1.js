@@ -245,6 +245,3 @@ for (let index=days.length-1; index >=0 ; index--){
    console.log("Days are",days[index])
 }
 
-
-//My first ToDo Application:
-
