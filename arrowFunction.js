@@ -27,7 +27,7 @@ const thingsNotDone = todos.filter((todo)=> todo.isDone === false)
 thingsNotDone.forEach(element => console.log(element.title))
 
 
-// Another Examples : 
+// Another Example : 
 
 const cameras = {
     price: 600,
