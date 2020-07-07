@@ -14,9 +14,7 @@ let userChecker = function (myString) {
         return true
     }
         return false
-
 }
-
 console.log(userChecker(userEmail))
 
 let passChecker = function (pass) {
