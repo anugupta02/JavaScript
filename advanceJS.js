@@ -55,3 +55,13 @@ console.log(users.size)
 console.log(users.get('marry'))
 console.log(users.keys())
 console.log(users.values())
+
+
+for (const key of users.keys()){
+    console.log(key)
+}
+
+for (const value of users.values()){
+    console.log(value.name)
+    console.log(value.age)
+}
