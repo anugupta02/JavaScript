@@ -56,7 +56,6 @@ console.log(users.get('marry'))
 console.log(users.keys())
 console.log(users.values())
 
-
 for (const key of users.keys()){
     console.log(key)
 }
@@ -65,3 +64,17 @@ for (const value of users.values()){
     console.log(value.name)
     console.log(value.age)
 }
+
+for (const [key,value] of users.entries()){
+    console.log(key + ": " +value.name +", "+value.age)
+}
+
+
+let arr = [['john',' 24'],['marry',' 23'],['sam',' 27']]
+let newMap = new Map(arr)
+for (const [key,value] of arr.entries()){
+    console.log(`${key + 1} = ${value}`)
+}
+
+newMap.forEach(((value, key) =>  console.log(`${key} ;) ${value}`)))
+
