@@ -23,8 +23,8 @@ const myElement1 = document.querySelectorAll('.classOne')
 //myPElement.textContent = 'Iam being changed using JS'
 //console.log(myPElement.textContent)
 
-const myH1Element = document.querySelector('h1')
-myH1Element.textContent = 'H1 being changed using JS'
+// const myH1Element = document.querySelector('h1')
+// myH1Element.textContent = 'H1 being changed using JS'
 
 const myPElements = document.querySelectorAll('p')
 
@@ -39,5 +39,16 @@ myPElements.forEach(function(p){
 //  }) 
 
 // Using Arrow Function to change textContent of p tags in JS : 
-const ChangeP = document.querySelectorAll('p')
-ChangeP.forEach((p)=>p.textContent='I have changed p with Arrow Function in JS')
+// const ChangeP = document.querySelectorAll('p')
+// ChangeP.forEach((p)=>p.textContent='I have changed p with Arrow Function in JS')
+
+
+// Creating a new element in DOM : 
+const myNewPara = document.createElement('p')
+myNewPara.textContent = 'I was added via JS.'
+
+document.querySelector('body').appendChild(myNewPara)
+
+
+
+
