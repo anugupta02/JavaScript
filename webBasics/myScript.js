@@ -28,13 +28,16 @@ myH1Element.textContent = 'H1 being changed using JS'
 
 const myPElements = document.querySelectorAll('p')
 
-// For replacing many p tags at once!
+// For replacing textContent of many p tags at once!
 myPElements.forEach(function(p){
    p.textContent = 'Iam being changed using loop in JS'
 }) 
 
-// For removing many p tags at one go : 
+// For removing textContent of many p tags at one go : 
 // myPElements.forEach(function(p){
 //     p.remove()
 //  }) 
 
+// Using Arrow Function to change textContent of p tags in JS : 
+const ChangeP = document.querySelectorAll('p')
+ChangeP.forEach((p)=>p.textContent='I have changed p with Arrow Function in JS')
