@@ -19,4 +19,22 @@ const myElement1 = document.querySelectorAll('.classOne')
  console.log(myElement1[0])
 
 
+//const myPElement = document.querySelector('p')
+//myPElement.textContent = 'Iam being changed using JS'
+//console.log(myPElement.textContent)
+
+const myH1Element = document.querySelector('h1')
+myH1Element.textContent = 'H1 being changed using JS'
+
+const myPElements = document.querySelectorAll('p')
+
+// For replacing many p tags at once!
+myPElements.forEach(function(p){
+   p.textContent = 'Iam being changed using loop in JS'
+}) 
+
+// For removing many p tags at one go : 
+// myPElements.forEach(function(p){
+//     p.remove()
+//  }) 
 
